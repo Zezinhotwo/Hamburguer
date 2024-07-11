@@ -1,0 +1,258 @@
+$background-color-small: red;
+$background-color-medium: rgb(187, 255, 0);
+$background-color-large: rgb(0, 47, 255);
+$cor-primaria: #1e1e1e;
+$cor-secundaria: #e9e3dc;
+$cor-terciaria: #b3a0cd;
+$cor-quaternaria: #d1ef53;
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 1200px;
+    background-color: $cor-primaria;
+    @media screen and (max-width: 450px) {
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1em;
+            // background-color: $cor-primaria;
+            color: white;
+            // font title
+            font-family: "Bowlby One", sans-serif;
+            font-weight: 400;
+            font-style: normal;
+        }
+        h1 {
+            font-size: 1.2em;
+        }
+        .menu-toggle {
+            display: none;
+        }
+        // Linhas do Hamburguer
+        .menu-icon {
+            padding-bottom: 0.5em;
+            display: none;
+            flex-direction: column;
+            cursor: pointer;
+        }
+
+        .menu-icon span {
+            width: 25px;
+            height: 3px;
+            background-color: white;
+            margin: 4px 0;
+            transition: 0.5s;
+        }
+
+        nav.menu {
+            display: flex;
+        }
+
+        nav.menu a {
+            color: white;
+            text-decoration: none;
+            margin: 0 1em;
+        }
+
+        button {
+            color: $cor-primaria;
+            background-color: $cor-terciaria;
+            border: none;
+            padding: 0.5em 1em;
+            cursor: pointer;
+            // font
+            font-family: "Bowlby One", sans-serif;
+            font-weight: 400;
+            font-style: normal;
+        }
+        // caixa
+        @media (max-width: 768px) {
+            .menu-icon {
+                display: flex;
+            }
+            // item dentro da CAIXA
+            nav.menu {
+                display: none;
+                flex-direction: column;
+                width: 100%;
+                background-color: #2e2d2d;
+                position: absolute;
+                top: 60px;
+                left: 0;
+            }
+            nav.menu a,
+            nav.menu button {
+                margin: 1em 0;
+                text-align: center;
+            }
+
+            .menu-toggle:checked + .menu-icon + nav.menu {
+                display: flex;
+            }
+            .menu-toggle:checked + .menu-icon span:nth-child(1) {
+                transform: rotate(45deg) translate(10px, 10px);
+                background-color: $cor-terciaria;
+                width: 35px;
+            }
+
+            .menu-toggle:checked + .menu-icon span:nth-child(2) {
+                opacity: 0;
+            }
+
+            .menu-toggle:checked + .menu-icon span:nth-child(3) {
+                transform: rotate(-45deg) translate(5px, -5px);
+                background-color: $cor-terciaria;
+                width: 35px;
+            }
+        }
+    }
+
+    @media screen and (min-width: 450px) and (max-width: 768px) {
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1em;
+            // background-color: $cor-primaria;
+            color: white;
+            // font title
+            font-family: "Bowlby One", sans-serif;
+            font-weight: 400;
+            font-style: normal;
+        }
+
+        .menu-toggle {
+            display: none;
+        }
+        // Linhas do Hamburguer
+        .menu-icon {
+            padding-bottom: 0.5em;
+            display: none;
+            flex-direction: column;
+            cursor: pointer;
+        }
+
+        .menu-icon span {
+            width: 25px;
+            height: 3px;
+            background-color: white;
+            margin: 4px 0;
+            transition: 0.5s;
+        }
+
+        nav.menu {
+            display: flex;
+        }
+
+        nav.menu a {
+            color: white;
+            text-decoration: none;
+            margin: 0 1em;
+        }
+
+        button {
+            color: $cor-primaria;
+            background-color: $cor-terciaria;
+            border: none;
+            padding: 0.5em 1em;
+            cursor: pointer;
+            // font
+            font-family: "Bowlby One", sans-serif;
+            font-weight: 400;
+            font-style: normal;
+        }
+        // caixa style
+        @media (max-width: 768px) {
+            .menu-icon {
+                display: flex;
+            }
+            // item dentro da CAIXA
+            nav.menu {
+                display: none;
+                flex-direction: column;
+                width: 100%;
+                background-color: #2e2d2d;
+                position: absolute;
+                top: 60px;
+                left: 0;
+            }
+            nav.menu a,
+            nav.menu button {
+                margin: 1em 0;
+                text-align: center;
+            }
+
+            .menu-toggle:checked + .menu-icon + nav.menu {
+                display: flex;
+            }
+            .menu-toggle:checked + .menu-icon span:nth-child(1) {
+                transform: rotate(45deg) translate(10px, 10px);
+                background-color: $cor-terciaria;
+                width: 35px;
+            }
+
+            .menu-toggle:checked + .menu-icon span:nth-child(2) {
+                opacity: 0;
+            }
+
+            .menu-toggle:checked + .menu-icon span:nth-child(3) {
+                transform: rotate(-45deg) translate(5px, -5px);
+                background-color: $cor-terciaria;
+                width: 35px;
+            }
+        }
+    }
+    @media screen and (min-width: 769px) {
+        // background-color: $background-color-large;
+        header {
+            // background-color: $cor-primaria;
+            color: $cor-secundaria;
+            height: 80px;
+            padding: 0 3em 0 3em;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            h1 {
+                cursor: pointer;
+                // font
+                font-family: "Bowlby One", sans-serif;
+                font-weight: 400;
+                font-style: normal;
+            }
+            input,
+            label {
+                display: none;
+            }
+            nav {
+                width: 30%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                justify-content: space-around;
+                font-family: "Bowlby One", sans-serif;
+                font-weight: 400;
+                font-style: normal;
+                a {
+                    color: $cor-secundaria;
+                    text-decoration: none;
+                }
+                button {
+                    color: $cor-primaria;
+                    background-color: $cor-terciaria;
+                    border: none;
+                    padding: 0.5em 1em;
+                    cursor: pointer;
+                    // font
+                    font-family: "Bowlby One", sans-serif;
+                    font-weight: 400;
+                    font-style: normal;
+                }
+            }
+        }
+    }
+}
