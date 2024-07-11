@@ -110,6 +110,60 @@ body {
                 width: 35px;
             }
         }
+        // Corpo
+        .section1 {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            h1 {
+                color: $cor-secundaria;
+                font-size: 1.5em;
+                padding: 0 1em;
+                line-height: 1em;
+                text-align: center;
+                // font
+                font-family: "Bowlby One", sans-serif;
+                font-weight: 400;
+                font-style: normal;
+            }
+            .ImgBurger {
+                width: 100%;
+            }
+        }
+        .section2 {
+            margin-top: 0.5em;
+            div {
+                background-color: $cor-quaternaria;
+                padding: 1em;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-direction: column;
+                h2 {
+                    font-size: 1em;
+                    // font
+                    font-family: "Bowlby One", sans-serif;
+                    font-weight: 400;
+                    font-style: normal;
+                }
+                div {
+                    display: flex;
+                    button {
+                        background-color: $cor-secundaria;
+                        border: 2px solid $cor-primaria;
+                        box-shadow: 5px 5px 0px $cor-primaria;
+                        align-self: start;
+                        margin-top: 0.5em;
+                        // font
+                        font-family: "Bowlby One", sans-serif;
+                        font-weight: 400;
+                        font-style: normal;
+                    }
+                }
+            }
+        }
+        // Fim do corpo
     }
 
     @media screen and (min-width: 450px) and (max-width: 768px) {
@@ -206,6 +260,59 @@ body {
                 width: 35px;
             }
         }
+        // Corpo
+        .section1 {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            h1 {
+                color: $cor-secundaria;
+                font-size: 2.5em;
+                line-height: 1em;
+                text-align: center;
+                // font
+                font-family: "Bowlby One", sans-serif;
+                font-weight: 400;
+                font-style: normal;
+            }
+            .ImgBurger {
+                width: 100%;
+            }
+        }
+        .section2 {
+            margin-top: 0.5em;
+            div {
+                background-color: $cor-quaternaria;
+                padding: 1em;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-direction: column;
+                h2 {
+                    font-size: 1.5em;
+                    // font
+                    font-family: "Bowlby One", sans-serif;
+                    font-weight: 400;
+                    font-style: normal;
+                }
+                div {
+                    display: flex;
+                    button {
+                        background-color: $cor-secundaria;
+                        border: 2px solid $cor-primaria;
+                        box-shadow: 5px 5px 0px $cor-primaria;
+                        align-self: start;
+                        margin-top: 0.5em;
+                        // font
+                        font-family: "Bowlby One", sans-serif;
+                        font-weight: 400;
+                        font-style: normal;
+                    }
+                }
+            }
+        }
+        // Fim do corpo
     }
     @media screen and (min-width: 769px) {
         // background-color: $background-color-large;
@@ -254,5 +361,69 @@ body {
                 }
             }
         }
+        // Corpo
+        .section1 {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            h1 {
+                color: $cor-secundaria;
+                font-size: 4em;
+                line-height: 1em;
+                text-align: center;
+                // font
+                font-family: "Bowlby One", sans-serif;
+                font-weight: 400;
+                font-style: normal;
+            }
+            .ImgBurger {
+                width: 80%;
+            }
+        }
+        .section2 {
+            margin-top: 2em;
+            div {
+                margin: 0 auto;
+                height: 300px;
+                border-radius: 20px;
+                background-color: $cor-quaternaria;
+                width: 80%;
+                padding: 1em;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                h2 {
+                    margin-left: 5em;
+                    font-size: 2.5em;
+                    // font
+                    font-family: "Bowlby One", sans-serif;
+                    font-weight: 400;
+                    font-style: normal;
+                }
+                div {
+                    padding: 0 10em;
+                    margin-right: 10em;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    flex-direction: column;
+                    button {
+                        background-color: $cor-secundaria;
+                        padding: 0.5em 1.2em;
+                        border: 2px solid $cor-primaria;
+                        box-shadow: 5px 5px 0px $cor-primaria;
+                        align-self: start;
+                        margin-top: 0.5em;
+
+                        // font
+                        font-family: "Bowlby One", sans-serif;
+                        font-weight: 400;
+                        font-style: normal;
+                    }
+                }
+            }
+        }
+        // Fim do corpo
     }
 }

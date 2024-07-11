@@ -13,3 +13,8 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 // End menu Mobile
+
+// Import img
+import ImgBurguer from "./assets/img/Burgers.png";
+const DomImgBurger = document.querySelector(".ImgBurger");
+DomImgBurger.src = ImgBurguer;
