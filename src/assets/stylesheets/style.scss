@@ -352,7 +352,7 @@ body {
                     color: $cor-primaria;
                     background-color: $cor-terciaria;
                     border: none;
-                    padding: 0.5em 1em;
+                    padding: 0.5em;
                     cursor: pointer;
                     // font
                     font-family: "Bowlby One", sans-serif;
@@ -394,27 +394,27 @@ body {
                 align-items: center;
                 justify-content: center;
                 h2 {
-                    margin-left: 5em;
-                    font-size: 2.5em;
+                    margin-left: 5%;
+                    font-size: 2em;
                     // font
                     font-family: "Bowlby One", sans-serif;
                     font-weight: 400;
                     font-style: normal;
                 }
                 div {
-                    padding: 0 10em;
-                    margin-right: 10em;
+                    margin: 0 5% 0 0;
                     display: flex;
                     align-items: center;
                     justify-content: center;
                     flex-direction: column;
+                    padding: 10%;
                     button {
                         background-color: $cor-secundaria;
                         padding: 0.5em 1.2em;
                         border: 2px solid $cor-primaria;
                         box-shadow: 5px 5px 0px $cor-primaria;
                         align-self: start;
-                        margin-top: 0.5em;
+                        margin-top: 2em;
 
                         // font
                         font-family: "Bowlby One", sans-serif;
