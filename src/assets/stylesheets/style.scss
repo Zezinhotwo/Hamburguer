@@ -12,8 +12,9 @@ $cor-quaternaria: #d1ef53;
 }
 
 body {
-    height: 1200px;
     background-color: $cor-primaria;
+
+    // media cell
     @media screen and (max-width: 450px) {
         header {
             display: flex;
@@ -163,9 +164,111 @@ body {
                 }
             }
         }
+        .section3 {
+            margin-top: 1em;
+            img {
+                margin-top: 1em;
+                width: 100%;
+            }
+        }
+        .ads {
+            color: $cor-quaternaria;
+            font-size: 1.3em;
+            padding: 1em 0;
+            text-align: center;
+            // font
+            font-family: "Bowlby One", sans-serif;
+            font-weight: 400;
+            font-style: normal;
+        }
+        .section4 {
+            background-image: url(../img/Lines.png);
+            background-position: center;
+            img {
+                width: 100%;
+            }
+            div {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-direction: column;
+                h3 {
+                    margin-top: 1em;
+                    margin-bottom: 1em;
+                    color: $cor-secundaria;
+                    font-size: 1.5em;
+                    text-align: center;
+                    // font
+                    font-family: "Bowlby One", sans-serif;
+                    font-weight: 400;
+                    font-style: normal;
+                }
+                button {
+                    background-color: $cor-quaternaria;
+                    // font
+                    font-family: "Bowlby One", sans-serif;
+                    font-weight: 400;
+                    font-style: normal;
+                }
+            }
+        }
         // Fim do corpo
+        // footer
+        footer {
+            margin: auto;
+            margin-top: 2em;
+            margin-bottom: 2em;
+            border-radius: 20px;
+            height: 300px;
+            padding: 2em;
+            background-color: $cor-terciaria;
+            width: 90%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            justify-content: space-around;
+            flex-direction: column-reverse;
+            .footTitle {
+                font-size: 1.5em;
+                // font
+                font-family: "Bowlby One", sans-serif;
+                font-weight: 400;
+                font-style: normal;
+            }
+            .more {
+                width: 100%;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-around;
+                span {
+                    // font
+                    font-family: "Bowlby One", sans-serif;
+                    font-weight: 400;
+                    font-style: normal;
+                }
+            }
+            .report{
+                display: flex;
+                flex-direction: column;
+                height: 50%;
+                justify-content: space-around;
+                label {
+                    // font
+                    font-family: "Bowlby One", sans-serif;
+                    font-weight: 400;
+                    font-style: normal;
+                }
+                input{
+                    padding: 1em 1.2em;
+                    border: .5px solid $cor-primaria;
+                    border-radius: 10px;
+                }
+            }
+        }
+        // End footer
     }
-
+    //End media cell
+    // media tablet
     @media screen and (min-width: 450px) and (max-width: 768px) {
         header {
             display: flex;
@@ -312,15 +415,118 @@ body {
                 }
             }
         }
+        .section3 {
+            margin-top: 1em;
+            img {
+                margin-top: 1em;
+                width: 100%;
+            }
+        }
+        .ads {
+            color: $cor-quaternaria;
+            font-size: 1.3em;
+            padding: 1em 0;
+            text-align: center;
+            // font
+            font-family: "Bowlby One", sans-serif;
+            font-weight: 400;
+            font-style: normal;
+        }
+        .section4 {
+            background-image: url(../img/Lines.png);
+            background-position: center;
+            img {
+                width: 100%;
+            }
+            div {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-direction: column;
+                h3 {
+                    margin-top: 1em;
+                    margin-bottom: 1em;
+                    color: $cor-secundaria;
+                    font-size: 1.5em;
+                    text-align: center;
+                    // font
+                    font-family: "Bowlby One", sans-serif;
+                    font-weight: 400;
+                    font-style: normal;
+                }
+                button {
+                    background-color: $cor-quaternaria;
+                    // font
+                    font-family: "Bowlby One", sans-serif;
+                    font-weight: 400;
+                    font-style: normal;
+                }
+            }
+        }
         // Fim do corpo
+        // footer
+        footer {
+            margin: auto;
+            margin-top: 2em;
+            margin-bottom: 2em;
+            border-radius: 20px;
+            height: 300px;
+            padding: 2em;
+            background-color: $cor-terciaria;
+            width: 90%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            justify-content: space-around;
+            flex-direction: column-reverse;
+            .footTitle {
+                font-size: 1.5em;
+                // font
+                font-family: "Bowlby One", sans-serif;
+                font-weight: 400;
+                font-style: normal;
+            }
+            .more {
+                width: 100%;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-around;
+                span {
+                    // font
+                    font-family: "Bowlby One", sans-serif;
+                    font-weight: 400;
+                    font-style: normal;
+                }
+            }
+            .report{
+                display: flex;
+                flex-direction: column;
+                height: 50%;
+                justify-content: space-around;
+                label {
+                    // font
+                    font-family: "Bowlby One", sans-serif;
+                    font-weight: 400;
+                    font-style: normal;
+                }
+                input{
+                    padding: 1em 1.2em;
+                    border: .5px solid $cor-primaria;
+                    border-radius: 10px;
+                }
+            }
+        }
+        // End footer
     }
+    // End media tablet
+    // media desktop
     @media screen and (min-width: 769px) {
         // background-color: $background-color-large;
         header {
             // background-color: $cor-primaria;
             color: $cor-secundaria;
             height: 80px;
-            padding: 0 3em 0 3em;
+            padding: 0 3% 0 3%;
             display: flex;
             align-items: center;
             justify-content: space-between;
@@ -336,7 +542,7 @@ body {
                 display: none;
             }
             nav {
-                width: 30%;
+                width: 40%;
                 display: flex;
                 align-items: center;
                 justify-content: center;
@@ -352,7 +558,7 @@ body {
                     color: $cor-primaria;
                     background-color: $cor-terciaria;
                     border: none;
-                    padding: 0.5em;
+                    padding: 1.5%;
                     cursor: pointer;
                     // font
                     font-family: "Bowlby One", sans-serif;
@@ -362,6 +568,10 @@ body {
             }
         }
         // Corpo
+        main {
+            margin-left: 5em;
+            margin-right: 5em;
+        }
         .section1 {
             display: flex;
             align-items: center;
@@ -378,7 +588,7 @@ body {
                 font-style: normal;
             }
             .ImgBurger {
-                width: 80%;
+                width: 100%;
             }
         }
         .section2 {
@@ -388,7 +598,7 @@ body {
                 height: 300px;
                 border-radius: 20px;
                 background-color: $cor-quaternaria;
-                width: 80%;
+                width: 100%;
                 padding: 1em;
                 display: flex;
                 align-items: center;
@@ -407,7 +617,7 @@ body {
                     align-items: center;
                     justify-content: center;
                     flex-direction: column;
-                    padding: 10%;
+                    padding: 0 15%;
                     button {
                         background-color: $cor-secundaria;
                         padding: 0.5em 1.2em;
@@ -424,6 +634,118 @@ body {
                 }
             }
         }
+        .section3 {
+            margin: auto;
+            margin-top: 1em;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            img {
+                // margin: auto;
+                margin-top: 1em;
+                width: 40%;
+            }
+        }
+        .ads {
+            color: $cor-quaternaria;
+            font-size: 6em;
+            padding: 1em 0;
+            text-align: center;
+            // font
+            font-family: "Bowlby One", sans-serif;
+            font-weight: 400;
+            font-style: normal;
+        }
+        .section4 {
+            background-image: url(../img/Lines.png);
+            background-position: center;
+            img {
+                width: 100%;
+            }
+            div {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-direction: column;
+                h3 {
+                    margin-top: 1em;
+                    margin-bottom: 0.5em;
+                    color: $cor-secundaria;
+                    font-size: 5em;
+                    text-align: center;
+                    // font
+                    font-family: "Bowlby One", sans-serif;
+                    font-weight: 400;
+                    font-style: normal;
+                }
+                button {
+                    background-color: $cor-quaternaria;
+                    border: none;
+                    padding: 1em 1.2em;
+                    // font
+                    font-family: "Bowlby One", sans-serif;
+                    font-weight: 400;
+                    font-style: normal;
+                }
+            }
+        }
         // Fim do corpo
+        // footer
+        footer {
+            margin: auto;
+            margin-top: 2em;
+            margin-bottom: 2em;
+            border-radius: 20px;
+            height: 300px;
+            padding: 2em;
+            background-color: $cor-terciaria;
+            width: 90%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            justify-content: space-around;
+            .footTitle {
+                font-size: 2em;
+                // font
+                font-family: "Bowlby One", sans-serif;
+                font-weight: 400;
+                font-style: normal;
+            }
+            .more {
+                width: 30%;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-around;
+                span {
+                    // font
+                    font-family: "Bowlby One", sans-serif;
+                    font-weight: 400;
+                    font-style: normal;
+                }
+            }
+            .report{
+                display: flex;
+                flex-direction: column;
+                height: 50%;
+                justify-content: space-around;
+                label {
+                    // font
+                    font-family: "Bowlby One", sans-serif;
+                    font-weight: 400;
+                    font-style: normal;
+                }
+                input{
+                    padding: 1em 1.2em;
+                    border: .5px solid $cor-primaria;
+                    border-radius: 10px;
+                }
+            }
+        }
+        //End footer
+
     }
+    //end media desktop
 }
